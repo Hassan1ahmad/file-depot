@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple file download portal.">
+  <title>File Depot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="brand-mark" aria-hidden="true">FD</div>
+      <div>
+        <p class="eyebrow">FILE DEPOT <span></span> DOWNLOAD CENTER</p>
+        <h1>Everything you need,<br><em>in one place.</em></h1>
+        <p class="intro">A focused space for the files your team needs to access quickly.</p>
+      </div>
+      <div class="hero-stamp" aria-label="Files are scanned live">
+        <span class="pulse"></span>
+        <span>Live directory<br><strong>Connected</strong></span>
+      </div>
+    </header>
+
+    <section class="toolbar" aria-label="File controls">
+      <div>
+        <p class="section-kicker">AVAILABLE FILES</p>
+        <h2 id="file-count">Loading files...</h2>
+      </div>
+      <label class="search-wrap">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <span class="sr-only">Search files</span>
+        <input id="search" type="search" placeholder="Search files" autocomplete="off">
+      </label>
+    </section>
+
+    <section id="file-grid" class="file-grid" aria-live="polite"></section>
+
+    <section id="empty-state" class="empty-state" hidden>
+      <div class="empty-icon" aria-hidden="true">+</div>
+      <h2>No files here yet</h2>
+      <p>Place an EXE, XLL, or DOCX file inside the <code>files</code> folder, then refresh this page.</p>
+    </section>
+
+    <footer>
+      <span>SUPPORTED FORMATS: <strong>EXE</strong> <strong>XLL</strong> <strong>DOCX</strong></span>
+      <span id="updated">Checking directory...</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

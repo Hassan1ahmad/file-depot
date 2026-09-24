@@ -21,7 +21,7 @@ function renderFiles() {
         <h3>${file.name}</h3>
         <div class="file-meta">${formatBytes(file.size)} <span aria-hidden="true">&middot;</span> ${file.modified}</div>
       </div>
-      <a class="download" href="${file.url}" download>Download <span aria-hidden="true">&darr;</span></a>
+      <a class="download" href="${file.url}" download="${file.name}">Download <span aria-hidden="true">&darr;</span></a>
     </article>
   `).join("");
 

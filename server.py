@@ -6,7 +6,7 @@ import json
 
 ROOT = Path(__file__).parent
 FILES = ROOT / "files"
-ALLOWED = {".exe", ".xll", ".docx", ".lnk", ".zip", ".pdf", ".txt", ".jpg", ".png", ".gif", ".mp4", ".mp3"}
+ALLOWED = {".exe", ".xll", ".docx", ".lnk", ".zip", ".pdf", ".txt", ".jpg", ".png", ".gif", ".mp4", ".mp3",".dotm", ".xlsm", ".xlsx", ".pptx", ".docm", ".potx", ".ppsx", ".pub", ".rtf", ".csv"}
 
 
 class FileDepotHandler(SimpleHTTPRequestHandler):
